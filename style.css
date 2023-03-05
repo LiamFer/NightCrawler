@@ -10,6 +10,7 @@
 
 body {
   font-family: "century gothic", Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
 main {
@@ -138,6 +139,8 @@ main {
 .item {
   padding: 20px;
   height: max-content;
+  width: 100%;
+  height: 100%;
 }
 
 .item h4 {
@@ -169,13 +172,23 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  justify-content: space-around;
+  text-align: center;
+  justify-content: center;
   align-items: center;
 }
 
-footer p:first-child {
+footer h4 {
+  font-size: 1.3em;
+}
+
+footer svg {
+  fill: white;
+  margin-bottom: -5px;
+}
+
+footer a:first-child {
   font-size: 1.4em;
-font-weight: bolder;
+  font-weight: bolder;
 }
 
 footer a {
@@ -188,4 +201,149 @@ footer a:hover {
   text-decoration: 2px underline #ffe066;
   color: #ffe066;
   transition: all 0.5s ease;
+}
+
+footer a:hover svg {
+  fill: #ffe066;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 600px) {
+  #container-1 > h1 {
+    font-size: 3.5em;
+  }
+
+  #container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 350px;
+  }
+
+  #container-4 {
+    grid-template-rows: minmax(200px, auto);
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer h4 {
+    width: 100%;
+    text-align: center;
+    align-self: flex-start;
+    font-size: 2em;
+  }
+
+  footer a {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #container-1 > h1 {
+    font-size: 5.5em;
+  }
+
+  #container-1 a {
+    font-size: 2.1em;
+  }
+
+  #container-2 h3 {
+    font-size: 2.5em;
+  }
+
+  #container-2 p {
+    font-size: 1.3em;
+  }
+
+  #container-3 h3 {
+    font-size: 2.5em;
+  }
+
+  .actor-cards {
+    max-width: 450px;
+    height: 610px;
+  }
+
+  .actor-cards h4 {
+    font-size: 1.8em;
+  }
+
+  .actor-cards p {
+    padding: 10px;
+    font-size: 19px;
+  }
+
+  .actor-cards img {
+    height: 350px;
+  }
+
+  #container-4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(250px, auto);
+    grid-template-areas:
+      "item1 item1"
+      "item2 item3";
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item h4 {
+    font-size: 1.9em;
+  }
+
+  .item p {
+    font-size: 1.3em;
+  }
+
+  .item1 {
+    grid-area: item1;
+  }
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #container-1 {
+    height: 100vh;
+  }
+
+  #container-2 {
+    height: 40vh;
+  }
+
+  #container-2 p {
+    width: 700px;
+  }
+
+  #container-4 {
+    height: 600px;
+  }
 }
