@@ -76,7 +76,7 @@ main {
 }
 
 #container-3 {
-  background-color: yellow;
+  background-color: #ffe066;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -127,6 +127,7 @@ main {
 }
 
 #container-4 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, minmax(220px, 1fr));
   text-align: center;
@@ -136,5 +137,55 @@ main {
 
 .item {
   padding: 20px;
-  height: 200px;
+  height: max-content;
+}
+
+.item h4 {
+  font-size: 22px;
+  margin: 10px;
+}
+
+.item p {
+  padding: 10px;
+}
+
+.item1 {
+  background-color: #364958;
+  color: white;
+}
+.item2 {
+  background-color: #587b7f;
+}
+.item3 {
+  background-color: #f8f4f9;
+}
+
+footer {
+  min-height: 40px;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p:first-child {
+  font-size: 1.4em;
+font-weight: bolder;
+}
+
+footer a {
+  color: white;
+  text-decoration: 2px underline transparent;
+  text-underline-offset: 8px;
+}
+
+footer a:hover {
+  text-decoration: 2px underline #ffe066;
+  color: #ffe066;
+  transition: all 0.5s ease;
 }
