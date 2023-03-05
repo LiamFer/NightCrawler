@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* Mobile First Version  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "century gothic", Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-1 {
+  background: url(images/nightcrawler-wallpaper-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  text-align: center;
+  gap: 20px;
+  box-shadow: inset 0px -20px 15px rgba(0, 0, 0, 0.699);
+}
+
+#container-1 h1 {
+  color: rgb(255, 255, 0);
+  font-size: 2.1em;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 10px 10px 15px black;
+}
+
+#container-1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-family: "century gothic", Arial, Helvetica, sans-serif;
+  background-color: rgba(245, 245, 245, 0.76);
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#container-1 a:hover {
+  background-color: rgb(0, 0, 0);
+  color: yellow;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+}
+
+#container-2 {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+#container-2 h3 {
+  color: yellow;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+#container-3 {
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+#container-3 > h3 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.actor-cards {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  height: 510px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.actor-cards h4 {
+  font-size: 1.4em;
+}
+
+.actor-cards p {
+  padding: 10px;
+}
+
+.actor-cards img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+#container-4 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(220px, 1fr));
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  padding: 20px;
+  height: 200px;
+}
